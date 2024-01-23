@@ -17,7 +17,7 @@ const fetchTVShows = async () => {
   try {
     // Make a fetch request to your API endpoint
     const response = await fetch(
-      `https://api.themoviedb.org/3/trending/tv/day?api_key=${key}?language=en-US`,
+      `https://api.themoviedb.org/3/trending/tv/day?language=en-US`,
       options
     );
 
