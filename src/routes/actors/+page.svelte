@@ -4,7 +4,6 @@
   import { onMount } from "svelte";
 
   onMount(fetchActors);
-  console.log(actors);
 </script>
 
 <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">

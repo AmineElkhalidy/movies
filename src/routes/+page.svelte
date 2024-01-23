@@ -22,20 +22,19 @@
                   src={"https://image.tmdb.org/t/p/w500" + movie.poster_path}
                   alt={movie.title}
                 />
+                <div class="gradient-overlay"></div>
               </div>
               <div class="tranding-slide-content">
                 <div class="tranding-slide-content-bottom">
                   <h2 class="food-name">{movie.title}</h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
+
+                  <div
+                    class="radial-progress text-orange-400 text-base mt-3"
+                    style={`--value:${movie.vote_average * 10};`}
+                    role="progressbar"
+                  >
+                    {Math.floor(movie.vote_average * 10)} %
+                  </div>
                 </div>
               </div>
             </div>
@@ -71,22 +70,21 @@
               <div class="tranding-slide-img">
                 <img
                   src={"https://image.tmdb.org/t/p/w500" + show.poster_path}
-                  alt={show.title}
+                  alt={show.name}
                 />
+
+                <div class="gradient-overlay"></div>
               </div>
               <div class="tranding-slide-content">
                 <div class="tranding-slide-content-bottom">
-                  <h2 class="food-name">{show.title}</h2>
-                  <h3 class="food-rating">
-                    <span>4.5</span>
-                    <div class="rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                    </div>
-                  </h3>
+                  <h2 class="food-name">{show.name}</h2>
+                  <div
+                    class="radial-progress text-orange-400 text-base mt-3"
+                    style={`--value:${show.vote_average * 10};`}
+                    role="progressbar"
+                  >
+                    {Math.floor(show.vote_average * 10)} %
+                  </div>
                 </div>
               </div>
             </div>
