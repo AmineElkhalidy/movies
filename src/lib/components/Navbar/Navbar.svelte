@@ -1,5 +1,5 @@
-<div class="w-full px-6 xl:px-0 mt-4">
-  <div class="max-w-6xl mx-auto bg-slate-200 rounded-full">
+<div class="w-full">
+  <div class=" bg-slate-200">
     <nav class="flex justify-center">
       <ul
         class="flex flex-wrap items-center font-medium text-base menu menu-horizontal"
