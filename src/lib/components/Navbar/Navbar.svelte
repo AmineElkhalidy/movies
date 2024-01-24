@@ -5,6 +5,10 @@
         class="flex flex-wrap items-center font-medium text-base menu menu-horizontal"
       >
         <li class="p-4 lg:px-8">
+          <a class="text-slate-800 hover:text-slate-900" href="/">Home</a>
+        </li>
+
+        <li class="p-4 lg:px-8">
           <details>
             <summary class="text-slate-800 hover:text-slate-900">Movies</summary
             >

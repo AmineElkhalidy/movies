@@ -4,9 +4,10 @@
   import { onMount } from "svelte";
 
   onMount(fetchActors);
+  console.log($actors);
 </script>
 
-<div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+<div class="grid place-items-center gap-10 md:grid-cols-2 lg:grid-cols-3">
   {#if $actors.length > 0}
     {#each $actors as actor (actor.id)}
       <ActorCard {...actor} />
