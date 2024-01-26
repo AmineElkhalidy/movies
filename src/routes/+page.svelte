@@ -57,7 +57,7 @@
   </div>
 </section>
 
-<section id="tranding">
+<!-- <section id="tranding">
   <div class="d-container">
     <h1 class="text-center section-heading">Tranding TV Shows</h1>
   </div>
@@ -94,7 +94,7 @@
         {/if}
       </div>
 
-      <!-- Slider control -->
+   
       <div class="tranding-slider-control">
         <div class="swiper-button-prev slider-arrow">
           <ion-icon name="arrow-back-outline"></ion-icon>
@@ -105,4 +105,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->

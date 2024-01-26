@@ -17,7 +17,8 @@ const fetchMovies = async () => {
   try {
     // Make a fetch request to your API endpoint
     const response = await fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`
+      `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
+      options
     );
 
     if (!response.ok) {
